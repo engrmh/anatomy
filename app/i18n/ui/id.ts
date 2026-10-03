@@ -2,14 +2,14 @@ import type { UiDictionary } from "../types";
 
 export const ui: UiDictionary = {
   meta: {
-    title: "Anatomy Atelier — Belajar anatomi seperti seorang seniman",
+    title: "Kooshyar Anatomy — Belajar anatomi seperti seorang seniman",
     description:
       "Jelajahi organ 3D dengan detail medis — jantung, otak, paru-paru, hati, ginjal, mata, usus, pankreas, dan kulit — dalam sanggar anatomi interaktif.",
-    ogTitle: "Anatomy Atelier — Belajar anatomi seperti seorang seniman",
+    ogTitle: "Kooshyar Anatomy — Belajar anatomi seperti seorang seniman",
     ogDescription: "Pelajari anatomi seperti seorang seniman melalui spesimen 3D yang imersif dan detail secara medis.",
-    imageAlt: "Spesimen jantung anatomis melayang di atas alas, di samping logo Anatomy Atelier",
+    imageAlt: "Spesimen jantung anatomis melayang di atas alas, di samping logo Kooshyar Anatomy",
   },
-  brand: { tagline: "Belajar anatomi seperti seorang seniman", home: "Beranda Anatomy Atelier" },
+  brand: { tagline: "Belajar anatomi seperti seorang seniman", home: "Beranda Kooshyar Anatomy" },
   nav: { explore: "Jelajahi", systems: "Sistem", lessons: "Pelajaran", library: "Pustaka", notes: "Catatan" },
   search: { placeholder: "Cari organ atau topik…" },
   profile: { open: "Buka profil pembelajar" },

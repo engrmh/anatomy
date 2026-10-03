@@ -2,14 +2,14 @@ import type { UiDictionary } from "../types";
 
 export const ui: UiDictionary = {
   meta: {
-    title: "Anatomy Atelier — تعلَّم التشريح كما يفعل الفنان",
+    title: "Kooshyar Anatomy — تعلَّم التشريح كما يفعل الفنان",
     description:
       "استكشف أعضاءً ثلاثية الأبعاد بتفصيل طبي — القلب والدماغ والرئتان والكبد والكليتان والعين والأمعاء والبنكرياس والجلد — في مرسم تشريح تفاعلي.",
-    ogTitle: "Anatomy Atelier — تعلَّم التشريح كما يفعل الفنان",
+    ogTitle: "Kooshyar Anatomy — تعلَّم التشريح كما يفعل الفنان",
     ogDescription: "تعلَّم التشريح كما يفعل الفنان عبر عيّنات ثلاثية الأبعاد غنية بالتفاصيل الطبية.",
-    imageAlt: "عيّنة قلب تشريحية تطفو فوق قاعدة، إلى جانب شعار Anatomy Atelier",
+    imageAlt: "عيّنة قلب تشريحية تطفو فوق قاعدة، إلى جانب شعار Kooshyar Anatomy",
   },
-  brand: { tagline: "تعلَّم التشريح كما يفعل الفنان", home: "الصفحة الرئيسية لـ Anatomy Atelier" },
+  brand: { tagline: "تعلَّم التشريح كما يفعل الفنان", home: "الصفحة الرئيسية لـ Kooshyar Anatomy" },
   nav: { explore: "استكشاف", systems: "الأجهزة", lessons: "الدروس", library: "المكتبة", notes: "الملاحظات" },
   search: { placeholder: "ابحث عن عضو أو موضوع…" },
   profile: { open: "فتح ملف المتعلّم" },
