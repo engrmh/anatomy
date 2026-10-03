@@ -6,27 +6,72 @@ import {
   Noto_Sans_Arabic,
   Noto_Sans_Devanagari,
   Noto_Serif_Devanagari,
-} from "next/font/google";
-import type { ScriptGroup } from "./config";
+  Vazirmatn,
+} from 'next/font/google';
+import type { ScriptGroup } from './config';
 
 // The display pair. Cormorant Garamond carries the "atelier" voice and happens
 // to ship Cyrillic, so Latin and Russian share it.
-const cormorant = Cormorant_Garamond({ variable: "--font-serif", subsets: ["latin", "latin-ext"], weight: ["400", "500", "600"] });
-const cormorantCyrillic = Cormorant_Garamond({ variable: "--font-serif", subsets: ["cyrillic", "latin"], weight: ["400", "500", "600"] });
-const dmSans = DM_Sans({ variable: "--font-sans", subsets: ["latin", "latin-ext"] });
-const notoSansCyrillic = Noto_Sans({ variable: "--font-sans", subsets: ["cyrillic", "latin"] });
+const cormorant = Cormorant_Garamond({
+  variable: '--font-serif',
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '600'],
+});
+const cormorantCyrillic = Cormorant_Garamond({
+  variable: '--font-serif',
+  subsets: ['cyrillic', 'latin'],
+  weight: ['400', '500', '600'],
+});
+const dmSans = DM_Sans({
+  variable: '--font-sans',
+  subsets: ['latin', 'latin-ext'],
+});
+const notoSansCyrillic = Noto_Sans({
+  variable: '--font-sans',
+  subsets: ['cyrillic', 'latin'],
+});
 
-const devanagariSerif = Noto_Serif_Devanagari({ variable: "--font-serif", subsets: ["devanagari", "latin"], weight: ["400", "500", "600"] });
-const devanagariSans = Noto_Sans_Devanagari({ variable: "--font-sans", subsets: ["devanagari", "latin"] });
+const devanagariSerif = Noto_Serif_Devanagari({
+  variable: '--font-serif',
+  subsets: ['devanagari', 'latin'],
+  weight: ['400', '500', '600'],
+});
+const devanagariSans = Noto_Sans_Devanagari({
+  variable: '--font-sans',
+  subsets: ['devanagari', 'latin'],
+});
 
-const arabicSerif = Noto_Naskh_Arabic({ variable: "--font-serif", subsets: ["arabic"], weight: ["400", "500", "600"] });
-const arabicSans = Noto_Sans_Arabic({ variable: "--font-sans", subsets: ["arabic"] });
+const arabicSerif = Noto_Naskh_Arabic({
+  variable: '--font-serif',
+  subsets: ['arabic'],
+  weight: ['400', '500', '600'],
+});
+const arabicSans = Noto_Sans_Arabic({
+  variable: '--font-sans',
+  subsets: ['arabic'],
+});
 
-const webFonts: Partial<Record<ScriptGroup, { serif: { variable: string }; sans: { variable: string } }>> = {
+const persianSerif = Vazirmatn({
+  variable: '--font-serif',
+  subsets: ['arabic'],
+  weight: ['400', '500', '600'],
+});
+const persianSans = Vazirmatn({
+  variable: '--font-sans',
+  subsets: ['arabic'],
+});
+
+const webFonts: Partial<
+  Record<
+    ScriptGroup,
+    { serif: { variable: string }; sans: { variable: string } }
+  >
+> = {
   latin: { serif: cormorant, sans: dmSans },
   cyrillic: { serif: cormorantCyrillic, sans: notoSansCyrillic },
   devanagari: { serif: devanagariSerif, sans: devanagariSans },
   arabic: { serif: arabicSerif, sans: arabicSans },
+  persian: { serif: persianSerif, sans: persianSans },
 };
 
 /**
@@ -41,9 +86,9 @@ const webFonts: Partial<Record<ScriptGroup, { serif: { variable: string }; sans:
  * set the same `--font-serif` / `--font-sans` variables the web fonts do.
  */
 const systemFontClass: Partial<Record<ScriptGroup, string>> = {
-  sc: "font-stack-sc",
-  jp: "font-stack-jp",
-  kr: "font-stack-kr",
+  sc: 'font-stack-sc',
+  jp: 'font-stack-jp',
+  kr: 'font-stack-kr',
 };
 
 /** Font classes for a script — only this script's faces are requested. */

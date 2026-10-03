@@ -5,6 +5,7 @@ export type ScriptGroup =
   | 'cyrillic'
   | 'devanagari'
   | 'arabic'
+  | 'persian'
   | 'sc'
   | 'jp'
   | 'kr';
@@ -37,7 +38,7 @@ export const locales: LocaleConfig[] = [
     englishName: 'Persian',
     country: 'Iran',
     dir: 'rtl',
-    script: 'latin',
+    script: 'persian',
     intl: 'fa_IR',
   },
   {
